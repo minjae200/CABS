@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> CABS </title>
+    <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+    {% block stylesheet %} 
+    {% endblock %}
+</head>
+<body>
+    {% include "sidebar.html" %}
+    {% block header %} {% endblock %}
+    {% block content %} {% endblock %}
+    {% block footer %} {% endblock %}
+</body>
+</html>

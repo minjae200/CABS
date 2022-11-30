@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% load sass_tags %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/card.css' %}">
+{% endblock %}
+
+{% block header %}
+  {% include "dashboard/header.html" %}
+{% endblock %}
+
+{% block content %}
+  {% include "dashboard/content.html" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "dashboard/footer.html" %}
+{% endblock %}
