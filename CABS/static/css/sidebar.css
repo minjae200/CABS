@@ -129,7 +129,7 @@ nav.main-menu li.active>a,
 .container {
   margin-left: 150px;
 }
-
+/* 
 .main-menu:hover~.container {
   margin-left: 250px;
-}
+} */
