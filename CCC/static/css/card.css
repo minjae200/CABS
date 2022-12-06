@@ -22,10 +22,8 @@ body .container {
   align-items: center;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 60px 0;
-
   max-height:100vh;
-
+  margin: 40px 0;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -42,7 +40,7 @@ body .container .card {
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  margin: 25px;
+  margin: 30px 25px;
   transition: 0.5s;
 }
 
@@ -67,8 +65,8 @@ body .container .card .box {
   background: #2a2b2f;
   border-radius: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   /* overflow: hidden; */
   transition: 1s;
   backface-visibility: hidden;
@@ -166,9 +164,22 @@ body .container .card .box .content h5 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+body .container .card .box .content .description:before {
+  position: absolute;
+  content: "";
+  margin-top: 200px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #d6d7d8;
+  border-radius: 15px;
+  opacity: 0.1;
+}
+
 body .container .card .box .content .description {
   /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 body .container .card .box .content p {

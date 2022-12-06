@@ -1,0 +1,79 @@
+.progressbar {
+    position: absolute;
+    height: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressbar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: progress 5s infinite;
+}
+
+.move {
+    position: absolute;
+    height: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 35px;
+    animation: moving 5s infinite;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(-50%);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    75% {
+        transform: translateX(25%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        background: #a28089;
+    }
+
+    25% {
+        width: 25%;
+        background: #a0d2eb;
+    }
+
+    50% {
+        width: 50%;
+        background: #ffa8b6;
+    }
+
+    75% {
+        width: 75%;
+        background: #d0bdf4;
+    }
+
+    100% {
+        width: 100%;
+        background: #7fe374;
+    }
+}
