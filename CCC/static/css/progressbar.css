@@ -26,8 +26,10 @@
     height: 10px;
     left: 20px;
     right: 20px;
-    bottom: 35px;
+    bottom: 40px;
     animation: moving 5s infinite;
+    font-size: 23px;
+    color: #fff;
 }
 
 @keyframes moving {
@@ -39,7 +41,7 @@
     }
 
     50% {
-        transform: translateX(0%);
+        transform: translateX(0%)
     }
 
     75% {
@@ -47,7 +49,7 @@
     }
 
     100% {
-        transform: translateX(50%);
+        transform: translateX(42%);
     }
 }
 
