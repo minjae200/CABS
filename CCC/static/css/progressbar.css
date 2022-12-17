@@ -28,7 +28,7 @@
     right: 20px;
     bottom: 40px;
     animation: moving 5s infinite;
-    font-size: 23px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -49,7 +49,7 @@
     }
 
     100% {
-        transform: translateX(42%);
+        transform: translateX(41%);
     }
 }
 
@@ -76,6 +76,6 @@
 
     100% {
         width: 100%;
-        background: #7fe374;
+        background: #85ee79;
     }
 }
