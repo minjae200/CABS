@@ -1,0 +1,29 @@
+  
+.bubble-message {
+  position: relative;
+  bottom: 40px;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 10px;
+  color: #774f38;
+  background-color: #384e44;
+  padding: 10px;
+  border-radius: 11px;
+  min-width: 120px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
