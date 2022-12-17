@@ -167,7 +167,7 @@ body .container .card .box .content .description:after {
   background-image: url("../image/load.png");
   background-size: cover;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.1;
 }
 
 body .container .card .box .content p {
