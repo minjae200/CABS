@@ -101,7 +101,7 @@
   color: #ffffff;
 }
 
-.wrapper li mark {
+.wrapper .icon mark {
   position: absolute;
   border-radius: 20px;   
   border: 2px solid #FFF;
@@ -114,13 +114,13 @@
   color: #FFF;
 }
 
-.wrapper li mark.green {
+.wrapper .icon mark.green {
   background-color: #27ae60;
 }
-.wrapper li mark.blue {
+.wrapper .icon mark.blue {
   background-color: #3498db;
 }
-.wrapper > li > mark {
+.wrapper > .icon > mark {
   -webkit-animation-name: bounceIn;
           animation-name: bounceIn;
   -webkit-transform-origin: center bottom;
@@ -157,7 +157,7 @@
   -webkit-animation-name: wobble;
           animation-name: wobble;
 }
-li {
+li .icon {
   list-style-type: circle;
 }
 

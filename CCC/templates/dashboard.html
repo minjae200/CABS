@@ -12,13 +12,15 @@
   <link rel="stylesheet" href="{% static 'css/message.css' %}">
   <link rel="stylesheet" href="{% static 'css/button.css' %}">
   <link rel="stylesheet" href="{% static 'css/page_card.css' %}">
+  <link rel="stylesheet" href="{% static 'css/menu.css' %}">
 
 {% endblock %}
 
 {% block header %}
   {% include "dashboard/header.html" %}
+  {% include "dashboard/menu.html" %}
 {% endblock %}
-
+  
 {% block content %}
   {% include "dashboard/content.html" %}
   <script src="{% static 'js/traffic.js' %}"></script>
