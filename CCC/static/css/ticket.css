@@ -1,0 +1,147 @@
+.ticket-container a {
+  position: relative;
+  display: inline-block;
+  padding: 5px !important;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.ticket-card .ticket-text {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.ticket-container a:hover {
+  background: rgb(175, 175, 175);
+  color: #fff;
+}
+.ticket-container .ticket-card {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 90px;
+  background-color: #737373;
+}
+.ticket-container .ticket-card .hidden {
+  display: none;
+  font-size: 25px !important;
+}
+.ticket-container .ticket-card:before {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  top: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #2a2b2f;
+}
+.ticket-container .ticket-card:after {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #2a2b2f;
+}
+.ticket-container .ticket-card ul {
+  z-index: 99;
+  position: absolute;
+  left: 39px;
+  top: 5px;
+  list-style-type: none;
+}
+.ticket-container .ticket-card ul li {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 6px 0;
+  background-color: #2a2b2f;
+}
+.ticket-container .ticket-card .fa-arrow-right {
+  z-index: 100;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.ticket-container .ticket-card p {
+  z-index: 99;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-weight: bolder;
+  opacity: 1.0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: bolder;
+
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  transition: 0.5s;
+}
+.ticket-container .ticket-card .pic {
+  z-index: 100;
+  width: 250px;
+  height: 100px;
+  filter: grayscale(100%);
+}
+.ticket-container .ticket-card button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: #DA4D1D;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+  border: 3px solid #DA4D1D;
+}
+
+
+.ticket-container .ticket-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 9999;
+
+}
+.ticket-container .ticket-card:hover button {
+  transform: scale(5.5) translateX(-10px);
+}
+.ticket-container .ticket-card:hover p {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: normal;
+}
+.ticket-container .ticket-card:hover .hidden {
+  display: block;
+  transform: translateY(-30px);
+}
+.ticket-container .ticket-card:hover .pic {
+  filter: grayscale(0);
+}

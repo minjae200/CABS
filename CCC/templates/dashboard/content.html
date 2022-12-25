@@ -1,289 +1,542 @@
 {% load static %}
-
-<div class="container">
+<div class="body-container">
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@webos4tv</h3>
-        <div class="assignee"> 홍길동 연구원 </div>
-        <div class="description">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
-          <p class="bubble-message">In Progress</p>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
-    </div>
-    {% include 'dashboard/modal/modify_modal.html' %}
-  </div>
-
-  <div class="card error">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@4.kinglake</h3>
-        <div class="assignee"> 홍길동 선임연구원 </div>
-        
-        <div class="description">
-          {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
-    </div>
-  </div>
-
-  <div class="card done">
-    <div class="box mebbin front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@mebbin</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-        
-        <div class="description">
-          {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="box mebbin back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box back">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@maria</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-
-        <div class="description">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box front">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@naejangsan</h3>
-        <div class="assignee"> 홍길동 연구원 </div>
-        
-        <div class="description">          
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@4.kinglake</h3>
-        <div class="assignee"> 홍길동 선임연구원 </div>
-        
-        <div class="description">          
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@mebbin</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-        
-        <div class="description">          
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@maria</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-
-        <div class="description">          
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@naejangsan</h3>
-        <div class="assignee"> 홍길동 연구원 </div>
-        <div class="description"></div>
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
+        </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@4.kinglake</h3>
-        <div class="assignee"> 홍길동 선임연구원 </div>
-        
-        <div class="description">          
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@mebbin</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-        
-        <div class="description">          
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@maria</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-
-        <div class="description">          
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
     </div>
   </div>
 
   <div class="card">
-    <div class="box front">
-      <div class="content">
-        <h4>2022.12.12</h4>
-        <h5>10:00 AM</h5>
-        <h3>@maria</h3>
-        <div class="assignee"> 홍길동 책임연구원 </div>
-
-        <div class="description">          
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
           {% include "dashboard/traffic.html" %}
-          <i class="fa-solid fa-bus move"></i>
-          <div class="progressbar"></div>
+          {% include "dashboard/progress.html" %}
         </div>
       </div>
-    </div>
-    <div class="box back">
-      <div class="content">
-        {% include "dashboard/back_card.html" %}
-      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
     </div>
   </div>
-  
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box front">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box back">
+        {% include "dashboard/button.html" %}
+        {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-box back">
+        <div class="card-information">
+          <div class="start-date">2022.12.12</div>
+          <div class="start-time">10:00 AM</div>
+          <div class="branch">@webos4tv</div>
+          <div class="assignee"> 홍길동 연구원 </div>
+        </div>
+        <div class="card-status">
+          {% include "dashboard/tag.html" %}
+          {% include "dashboard/traffic.html" %}
+          {% include "dashboard/progress.html" %}
+        </div>
+      </div>
+    <div class="card-box front">
+      {% include "dashboard/button.html" %}
+      {% include "dashboard/ticket.html" %}
+    </div>
+  </div>
 </div>

@@ -1,23 +1,6 @@
-body .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  max-height:100vh;
-  margin: 40px 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.container::-webkit-scrollbar {
-  display: none;
-}
-
-body .container .card {
-  position: relative;
+.card {
   min-width: 320px;
-  height: 380px;
+  height: 400px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -26,19 +9,7 @@ body .container .card {
   background-color: #232427;
 }
 
-body .container .card:nth-child(3n+1) .box .content a {
-  background: #2196f3;
-}
-
-body .container .card:nth-child(3n+2) .box .content a {
-  background: #e91e63;
-}
-
-body .container .card:nth-child(3n+3) .box .content a {
-  background: #23c186;
-}
-
-body .container .card .box {
+.card-box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -46,22 +17,21 @@ body .container .card .box {
   bottom: 20px;
   background: #2a2b2f;
   border-radius: 15px;
-  display: flex;
   transition: ease all 1s;
   backface-visibility: hidden;
 }
 
-body .container .card .box.front{
+.card-box.front{
   transform: rotateY(0deg);
   cursor: pointer;
 }
 
-body .container .card .box.back{
+.card-box.back{
   transform: rotateY(180deg);
   cursor: pointer;
 }
 
-body .container .card:hover {
+.card:hover {
   animation-name: select;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -76,122 +46,76 @@ body .container .card:hover {
   }
 }
 
-body .container .card:hover .box.front{
+.card:hover .card-box.front{
   transform: rotateX(0deg) rotateY(-180deg);
 }
 
-body .container .card:hover .box.back{
+.card:hover .card-box.back{
   transform: rotateX(0deg) rotateY(0deg);
 }
 
-body .container .card .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.02);
-  background-size: cover;
-  opacity: 0.10;
+.card-information {
+  position: static;
+  height: 45%;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
-body .container .card .box .content {
-  user-select:none;
-  padding: 20px;
-  text-align: center;
+.card-status {
+  position: static;
+  height: 55%;
 }
 
-body .container .card .box .content .assignee {
-  position: absolute;
-  top: 160px;
-  right: 20px;
-  font-size: 1.3rem;
+.start-date {
+  display: inline-block;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.start-time {
+  display: inline-block;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
-  font-weight: bold;
 }
 
-
-body .container .card .box .content h3 {
-  position: absolute;
-  top: 55px;
-  right: 20px;
+.branch {
   font-size: 2rem;
   color: #fff;
-  z-index: 1;
-  transition: 0.5s;
-  margin-bottom: 15px;
+  height: 50%;
+  line-height: 110%;
 }
 
-body .container .card .box .content h4 {
-  position: absolute;
-  top: 10px;
-  right: 100px;
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.8);
+.assignee {
+  position: relative;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  bottom: 0px;
 }
 
-body .container .card .box .content h5 {
-  position: absolute;
-  top: 25px;
-  right: 5px;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-body .container .card .box .content .description:before {
+.card-status:before {
   position: absolute;
   content: "";
-  margin-top: 190px;
+  margin-top: 220px;
   top: 5px;
   left: 5px;
   right: 5px;
   bottom: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
-body .container .card .box .content .description {
-  /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
-  margin-top: 200px;
-}
-body .container .card .box .content .description:after {
+.card-status:after {
   position: absolute;
   content: "";
-  margin-top: 190px;
+  margin-top: 220px;
   top: 5px;
   left: 5px;
   right: 20px;
   bottom: 5px;
-  background-image: url("../image/load.png");
+  background-image: url("../image/road.png");
   background-size: cover;
   z-index: -1;
-  opacity: 0.1;
-}
-
-body .container .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  z-index: 1;
-  transition: 0.5s;
-}
-
-body .container .card .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  background: black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
-body .container .card .box .content a:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-  background: #fff;
-  color: #000;
+  opacity: 0.15;
 }
