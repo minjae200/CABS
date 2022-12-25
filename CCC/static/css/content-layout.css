@@ -1,6 +1,28 @@
 .header-container {
-    min-height: 60px;
-    border-bottom: 1px solid #db5f5f;
+    position: relative;
+    display: flex;
+    max-height: 60px;
+    border-bottom: 2px solid #db5f5f;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+.dashboard-container {
+    border: 1px solid #ff9500;
+    width: 40%;
+    height: 60px;
+}
+
+.user-container {
+    border: 1px solid #00ff40;
+    width: 20%;
+    height: 60px;
+}
+
+.search-container {
+    border: 1px solid #00a2ff;
+    width: 30%;
+    height: 60px;
 }
 
 .body-container {

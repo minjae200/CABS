@@ -5,7 +5,8 @@
     background: var(--tag-bg);
     color: var(--text-color);
     font-weight: 600;
-    margin: .25em .1em
+    margin: .25em .1em;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 h1.tag {
@@ -179,7 +180,7 @@ h1.tag {
       opacity: 1.0;
     }
     50% {
-      opacity: 0.6;
+      opacity: 0.3;
     }
     100% {
       opacity: 1.0;

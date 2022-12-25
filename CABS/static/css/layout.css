@@ -9,6 +9,8 @@ body {
   background: #1d1e21 !important;
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 body::-webkit-scrollbar {
   display: none;
