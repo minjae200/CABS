@@ -56,7 +56,10 @@ h1.tag {
 
 .tag-angular {
     background: #dc0530;
-    color: #fff
+    color: #fff;
+    animation-name: tag-twinkle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .tag-firebase {
@@ -116,7 +119,10 @@ h1.tag {
 
 .tag-svelte {
     color: #fff;
-    background: #ff3e00
+    background: #ff3e00;
+    animation-name: tag-twinkle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .tag-react {
@@ -154,3 +160,28 @@ h1.tag {
     color: #313244;
     background: #adecf3
 }
+
+.tag-common {
+    color: #939393;
+    background: #3b3b3b
+}
+
+.tag-danger {
+    color: #fff;
+    background: #ff0000;
+    animation-name: tag-twinkle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tag-twinkle {
+    0% {
+      opacity: 1.0;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }

@@ -38,9 +38,25 @@
   border: 0;
 }
 .bus-move {
-  animation: moving 5s infinite;
+  /* animation: moving 5s infinite; */
   font-size: 25px;
   color: #fff;
+}
+
+.bus-move .position0 {
+    transform: translateX(0px);
+}
+.bus-move .position25 {
+    transform: translateX(40px);
+}
+.bus-move .position50 {
+    transform: translateX(100px);
+}
+.bus-move .position75 {
+    transform: translateX(160px);
+}
+.bus-move .position100 {
+    transform: translateX(215px);
 }
 
 @keyframes moving {
