@@ -124,67 +124,75 @@
   }
 }
 
-#sidebarMenu {
-  position: fixed;
-  left: -15px;
-  top: 20px;
-  width: 150px;
-  transform: translateX(-250px);
-  transition: transform 250ms ease-in-out;
-  background-color: black;
+.sidebar-menu {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--sidebar);
   z-index: 9999;
   padding: 0;
   margin: 0;
   border-radius: 10px;
 }
-.sidebarMenuInner{
-  background-color: black;
-  border-radius: 5px;
+
+.sidebar-header {
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4vh;
+  border: 1px solid rgb(15, 153, 70);
 }
 
-.sidebarMenuInner li{
-  font-size: 10px;
-  height: 30px;
+.sidebar-body {
+  width: 100%;
+  height: 90vh;
+  border: 1px solid rgb(182, 35, 35);
+  margin: 0 auto;
+}
+
+.sidebar-footer {
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6vh;
+  border: 1px solid #fff;
+}
+
+.sidebar-body li{
+  font-size: 13px;
   list-style: none;
   color: #fff;
-  /* text-transform: uppercase; */
   font-weight: bold;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  
-  padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px;
 }
 
-.sidebarMenuInner li:hover{
+.sidebar-body li:hover{
   background-color: rgb(195, 52, 52);
   transition: all 0.3s;
 }
 
-.sidebarMenuInner li span{
+.sidebar-body li span{
   margin-left: 10px;
 }
-.sidebarMenuInner li a{
+.sidebar-body li a{
   color: #fff;
-  /* text-transform: uppercase; */
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
 }
-input[type="checkbox"]:checked ~ #sidebarMenu {
+
+input[type="checkbox"]:checked ~ .sidebar-menu {
   transform: translateX(0);
 }
 
-.sidebar-footer {
-  position: relative;
-  height: 60px;
+.develop-team {
+  font-size: 12px;
+  color: #fff;
 }
 
-.created-team {
-  position: absolute;
-  padding-left: 20px;
-  bottom: 0px;
+.project-name {
+  font-size: 1.3em;
   color: #fff;
-  font-size: 5px;
 }

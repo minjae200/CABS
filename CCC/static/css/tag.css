@@ -7,6 +7,7 @@
     font-weight: 600;
     margin: .25em .1em;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    text-align: center;
 }
 
 h1.tag {
@@ -71,6 +72,10 @@ h1.tag {
 .tag-vue {
     background: #41b883;
     color: #000;
+}
+
+.tag-vue:before {
+    background-color: #000;
 }
 
 .tag-rxjs {
@@ -170,6 +175,11 @@ h1.tag {
 .tag-danger {
     color: #fff;
     background: #ff0000;
+}
+
+.tag-progress {
+    background: #fff;
+    color: #4a8afc;
     animation-name: tag-twinkle;
     animation-duration: 2s;
     animation-iteration-count: infinite;

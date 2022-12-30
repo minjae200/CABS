@@ -6,6 +6,7 @@
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 20px 20px;
+  /* background-color: #232427; */
   background-color: #232427;
 }
 
@@ -15,7 +16,9 @@
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
+  /* background: #2a2b2f; */
+  background: #4b4d54;
+
   border-radius: 15px;
   transition: ease all 1s;
   backface-visibility: hidden;
@@ -60,11 +63,12 @@
   text-align: right;
   margin-right: 10px;
   margin-left: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .card-status {
-  position: static;
   height: 55%;
+  padding: 15px;
 }
 
 .start-date {
@@ -85,7 +89,6 @@
   height: 50%;
   line-height: 110%;
 }
-
 .assignee {
   position: relative;
   font-size: 1.3rem;
@@ -97,13 +100,15 @@
 .card-status:before {
   position: absolute;
   content: "";
-  margin-top: 220px;
+  color: #fff;
+  margin-top: 170px;
   top: 5px;
   left: 5px;
   right: 5px;
   bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .card-status:after {
@@ -114,8 +119,71 @@
   left: 5px;
   right: 20px;
   bottom: 5px;
-  background-image: url("../image/road.png");
+  /* background-image: url("../image/road.png"); */
   background-size: cover;
   z-index: -1;
   opacity: 0.15;
+}
+
+.card-status-item-container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.card-status-item {
+  height: 30%;
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  margin: 0 auto;
+}
+
+.card-status-item.line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item-category {
+  color: #fff;
+  font-size: 15px;
+  width: 50%;
+  float: left;
+  font-weight: 500;
+}
+
+
+.item-status {
+  width: 60%;
+}
+
+.ccc:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../image/ccc.png");
+  background-size: cover;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.gerrit:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../image/gerrit.png");
+  background-size: cover;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.jira:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../image/jira.png");
+  background-size: cover;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
 }

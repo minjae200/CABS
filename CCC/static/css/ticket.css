@@ -23,8 +23,8 @@
 }
 
 .ticket-container a:hover {
-  background: rgb(171, 171, 171);
   color: #fff;
+  transform: scale(1.1);
 }
 
 .ticket-container .ticket-card {
@@ -32,8 +32,7 @@
   overflow: hidden;
   width: 250px;
   height: 90px;
-  background-color: #5c5c5c;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: #232427;
 }
 .ticket-container .ticket-card .hidden {
   display: none;
@@ -49,7 +48,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #2a2b2f;
+  background-color: #4b4d54;
 }
 .ticket-container .ticket-card:after {
   content: "";
@@ -61,7 +60,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #2a2b2f;
+  background-color: #4b4d54;
 }
 .ticket-container .ticket-card ul {
   z-index: 99;

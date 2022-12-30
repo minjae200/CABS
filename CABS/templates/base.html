@@ -19,8 +19,10 @@
 </head>
 <body>
     {% include "sidebar.html" %}
-    {% block header %} {% endblock %}
-    {% block content %} {% endblock %}
-    {% block footer %} {% endblock %}
+    <div class="main-container">
+        {% block header %} {% endblock %}
+        {% block content %} {% endblock %}
+        {% block footer %} {% endblock %}
+    </div>
 </body>
 </html>
