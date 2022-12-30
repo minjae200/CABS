@@ -199,4 +199,11 @@ input[type="checkbox"]:checked ~ .sidebar-menu {
   font-size: 1.3em;
   color: #fff;
   padding: 12px;
+  display: inline-block;
+}
+
+.project-version {
+  font-size: 0.6em;
+  color: rgb(210, 210, 210);
+  display: inline-block;
 }

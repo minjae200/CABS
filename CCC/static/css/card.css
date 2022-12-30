@@ -163,7 +163,7 @@
   opacity: 0.2;
   z-index: -1;
   top: 0px;
-  left: 30px;
+  left: 25px;;
 }
 
 
@@ -179,7 +179,7 @@
   z-index: -1;
   opacity: 0.2;
   top: 8px;
-  left: 30px
+  left: 25px;
 }
 
 .jira:before {
@@ -193,7 +193,7 @@
   height: 30px;
   opacity: 0.3;
   top: 10px;
-  left: 30px;
+  left: 25px;
   margin: 0 auto;
   z-index: -1;
 }
