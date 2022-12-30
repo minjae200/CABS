@@ -132,13 +132,14 @@
 }
 
 .card-status-item {
+  position: relative;
   height: 30%;
   width: 90%;
-  padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items:  center;
   margin: 0 auto;
+  padding: 4px;
 }
 
 .card-status-item.line {
@@ -148,42 +149,54 @@
 .item-category {
   color: #fff;
   font-size: 15px;
-  width: 50%;
+  width: 40%;
   float: left;
   font-weight: 500;
 }
 
-
-.item-status {
-  width: 60%;
-}
-
 .ccc:before {
+  position: absolute;
   display: inline-block;
   content: "";
   background-image: url("../image/ccc.png");
   background-size: cover;
   vertical-align: middle;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.2;
+  z-index: -1;
+  top: 0px;
+  left: 30px;
 }
 
+
 .gerrit:before {
+  position: absolute;
   display: inline-block;
   content: "";
   background-image: url("../image/gerrit.png");
   background-size: cover;
   vertical-align: middle;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  opacity: 0.2;
+  top: 8px;
+  left: 30px
 }
 
 .jira:before {
+  position: absolute;
   display: inline-block;
   content: "";
   background-image: url("../image/jira.png");
   background-size: cover;
   vertical-align: middle;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  top: 10px;
+  left: 30px;
+  margin: 0 auto;
+  z-index: -1;
 }
