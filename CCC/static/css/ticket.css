@@ -32,7 +32,7 @@
   overflow: hidden;
   width: 250px;
   height: 90px;
-  background-color: #232427;
+  background-color: var(--table-header);
 }
 .ticket-container .ticket-card .hidden {
   display: none;
@@ -48,7 +48,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #4b4d54;
+  background-color: #2a2b2f;
 }
 .ticket-container .ticket-card:after {
   content: "";
@@ -60,7 +60,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #4b4d54;
+  background-color: #2a2b2f;
 }
 .ticket-container .ticket-card ul {
   z-index: 99;
@@ -125,7 +125,7 @@
 }
 
 .ticket-container .ticket-card:hover button {
-  transform: scale(5.5) translateX(-10px);
+  transform: scale(5.5) translateX(-5px);
 }
 .ticket-container .ticket-card:hover p {
   color: #fff;

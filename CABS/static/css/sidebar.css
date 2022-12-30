@@ -139,12 +139,13 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 4vh;
+  height: 80px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .sidebar-body {
   width: 100%;
-  height: 90vh;
+  height: calc(95vh - 160px);
   margin: 0 auto;
 }
 
@@ -153,7 +154,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 6vh;
+  height: 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -197,4 +198,5 @@ input[type="checkbox"]:checked ~ .sidebar-menu {
 .project-name {
   font-size: 1.3em;
   color: #fff;
+  padding: 12px;
 }
