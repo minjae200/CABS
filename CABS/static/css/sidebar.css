@@ -167,6 +167,10 @@
   padding: 15px;
 }
 
+.sidebar-body .active {
+  background-color: var(--sidebar-active-link);
+}
+
 .sidebar-body li:active {
   background-color: var(--sidebar-active-link);
 }
