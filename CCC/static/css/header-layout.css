@@ -9,7 +9,7 @@
 }
 .search-container {
     position: relative;
-    width: calc(60% - 280px);
+    width: calc(90% - 280px);
     padding-left: 20px;
     margin: 10px;
 }
@@ -33,4 +33,5 @@
     float: right;
     display: flex;
     top: 35px;
+    right: 20px;
 }

@@ -72,6 +72,7 @@
   display: inline-block;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
 }
 
 .start-time {
@@ -86,6 +87,7 @@
   height: 50%;
   line-height: 110%;
 }
+
 .assignee {
   position: relative;
   font-size: 1.3rem;
