@@ -3,7 +3,6 @@
   display: inline-block;
   padding: 5px !important;
   margin-top: 5px !important;
-  margin-bottom: 10px !important;
   background: black;
   border-radius: 5px;
   text-decoration: none;
@@ -12,14 +11,14 @@
 }
 
 .ticket-card .ticket-text {
-    position: absolute;
-    top: 45px;
-    right: 20px;
-    font-size: 2rem;
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    margin-bottom: 15px;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
 }
 
 .ticket-container a:hover {
@@ -48,7 +47,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #2a2b2f;
+  background-color: #3B4354;
 }
 .ticket-container .ticket-card:after {
   content: "";
@@ -60,7 +59,7 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #2a2b2f;
+  background-color: #3B4354;
 }
 .ticket-container .ticket-card ul {
   z-index: 99;
@@ -74,7 +73,7 @@
   height: 2px;
   border-radius: 2px;
   margin: 6px 0;
-  background-color: #2a2b2f;
+  background-color: #3B4354;
 }
 .ticket-container .ticket-card .fa-arrow-right {
   z-index: 100;
@@ -103,12 +102,7 @@
   z-index: 1;
   transition: 0.5s;
 }
-.ticket-container .ticket-card .pic {
-  z-index: 100;
-  width: 250px;
-  height: 100px;
-  filter: grayscale(100%);
-}
+
 .ticket-container .ticket-card button {
   position: absolute;
   right: 14px;

@@ -1,12 +1,13 @@
 .card {
   min-width: 320px;
   height: 400px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
   border-radius: 15px;
   margin: 10px 20px;
-  background-color: #1b1d20;
+  /* background-color: #1b1d20; */
+  background-color: var(--app-bg);
 }
 
 .card-box {
@@ -15,10 +16,11 @@
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
+  background: #3B4354;
   border-radius: 15px;
   transition: ease all 1s;
   backface-visibility: hidden;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .card-box.front{
@@ -30,22 +32,6 @@
   transform: rotateY(180deg);
   cursor: pointer;
 }
-
-.card:hover {
-  animation-name: select;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes select {
-  from {
-    background-color: #313131;
-  }
-  to {
-    background-color: #232427;
-  }
-}
-
 .card:hover .card-box.front{
   transform: rotateX(0deg) rotateY(-180deg);
 }
@@ -58,21 +44,18 @@
   position: static;
   height: 45%;
   text-align: right;
-  margin-right: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
   margin-left: 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.card-status {
-  height: 55%;
-  padding: 15px;
-}
-
 .start-date {
   display: inline-block;
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 1);
   letter-spacing: 1px;
+  top: 5px;
 }
 
 .start-time {
@@ -91,49 +74,40 @@
 .assignee {
   position: relative;
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   font-weight: bold;
-  bottom: 0px;
+  bottom: 5px;
+}
+
+.card-status {
+  height: 58%;
+  padding: 15px;
 }
 
 .card-status:before {
   position: absolute;
   content: "";
   color: #fff;
-  margin-top: 170px;
+  margin-top: 180px;
   top: 5px;
   left: 5px;
   right: 5px;
   bottom: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: var(--table-header);
   border-radius: 10px;
   z-index: -1;
 }
 
-.card-status:after {
-  position: absolute;
-  content: "";
-  margin-top: 220px;
-  top: 5px;
-  left: 5px;
-  right: 20px;
-  bottom: 5px;
-  /* background-image: url("../image/road.png"); */
-  background-size: cover;
-  z-index: -1;
-  opacity: 0.15;
-}
-
 .card-status-item-container {
+  position: relative;
   height: 100%;
   width: 100%;
-  align-items: center;
 }
 
 .card-status-item {
   position: relative;
   height: 30%;
-  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items:  center;
@@ -151,6 +125,7 @@
   width: 40%;
   float: left;
   font-weight: 500;
+  margin-left: 15px;
 }
 
 .ccc:before {
@@ -165,7 +140,7 @@
   opacity: 0.2;
   z-index: -1;
   top: 0px;
-  left: 25px;;
+  left: 40px;;
 }
 
 
@@ -181,7 +156,7 @@
   z-index: -1;
   opacity: 0.2;
   top: 8px;
-  left: 25px;
+  left: 40px;
 }
 
 .jira:before {
@@ -195,7 +170,7 @@
   height: 30px;
   opacity: 0.3;
   top: 10px;
-  left: 25px;
+  left: 40px;
   margin: 0 auto;
   z-index: -1;
 }
