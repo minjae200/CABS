@@ -2,12 +2,25 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(400px, 430px));
     justify-content: center;
-    align-content: center;
     max-height: 90vh;
+    min-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+/* .card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 90vh;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+} */
 
 .card-container::-webkit-scrollbar {
     display: none;

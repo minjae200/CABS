@@ -34,6 +34,7 @@
   transform: rotateY(180deg);
   cursor: pointer;
 }
+
 .card:hover .card-box.front{
   transform: rotateX(0deg) rotateY(-180deg);
 }
@@ -92,8 +93,8 @@
   color: #fff;
   margin-top: 180px;
   top: 5px;
-  left: 5px;
-  right: 5px;
+  left: 15px;
+  right: 15px;
   bottom: 5px;
   /* background-color: rgba(0, 0, 0, 0.4); */
   background-color: var(--table-header);
