@@ -70,16 +70,15 @@
 .branch {
   font-size: 2rem;
   color: #fff;
-  height: 50%;
-  line-height: 110%;
+  height: 48%;
+  line-height: 100%;
 }
 
 .assignee {
   position: relative;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 1);
-  font-weight: bold;
-  bottom: 5px;
+  bottom: -5px;
 }
 
 .card-status {
