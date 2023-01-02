@@ -1,11 +1,13 @@
 .card {
   min-width: 320px;
+  max-width: 320px;
   height: 400px;
   /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
   border-radius: 15px;
   margin: 10px 20px;
+  border: 0px;
   /* background-color: #1b1d20; */
   background-color: var(--app-bg);
 }

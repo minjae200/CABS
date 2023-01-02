@@ -1,9 +1,9 @@
 .card-container {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-height: 90vh;
+    align-content: center;
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
