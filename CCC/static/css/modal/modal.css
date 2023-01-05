@@ -1,0 +1,8 @@
+
+.modal-color {
+    background-color: var(--app-bg);
+}
+
+.modal-text-color {
+    color: whitesmoke;
+}
