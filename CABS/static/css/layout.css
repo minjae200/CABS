@@ -26,7 +26,7 @@
 
 body {
   background: var(--app-bg) !important;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;

@@ -134,8 +134,9 @@
   border-radius: 20px;   
   border: 2px solid #FFF;
   width: 20px;
-  height: 20px;  
+  height: 20px;
   background-color: #FF6B6B;
+  /* background-color: #CD201F; */
   top: -5px;
   left: 25px;
   font-size: 5px;
@@ -148,6 +149,7 @@
 }
 .wrapper .icon mark.blue {
   background-color: #3498db;
+  /* background-color: #1877F2; */
 }
 .wrapper > .icon > mark {
   -webkit-animation-name: bounceIn;

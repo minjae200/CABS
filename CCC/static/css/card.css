@@ -6,9 +6,8 @@
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
   border-radius: 15px;
-  margin: 10px 20px;
+  margin: auto;
   border: 0px;
-  /* background-color: #1b1d20; */
   background-color: var(--app-bg);
 }
 
@@ -68,17 +67,19 @@
 }
 
 .branch {
-  font-size: 2rem;
+  position: relative;
+  font-size: 1.8rem;
   color: #fff;
   height: 48%;
-  line-height: 100%;
+  line-height: 120%;
+  top: 7px;
 }
 
 .assignee {
   position: relative;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 1);
-  bottom: -5px;
+  bottom: -10px;
 }
 
 .card-status {
