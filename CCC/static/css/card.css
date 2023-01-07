@@ -34,6 +34,7 @@
   cursor: pointer;
 }
 
+
 .card:hover .card-box.front{
   transform: rotateX(0deg) rotateY(-180deg);
 }

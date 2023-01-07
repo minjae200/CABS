@@ -22,16 +22,23 @@
 
 {% block header %}
   {% include "dashboard/header.html" %}
+  {% include "dashboard/modal/create-modal.html" %}
 {% endblock %}
   
 {% block content %}
   <script src="{% static 'js/modal-control.js' %}"></script>
   {% include "dashboard/content.html" %}
-  {% include "dashboard/modal/schedule.html" %}
-  {% include "dashboard/modal/register.html" %}
-  {% include "dashboard/modal/epk.html" %}
-  {% include "dashboard/modal/test-info.html" %}
-  {% include "dashboard/modal/log.html" %}
+  {% include "dashboard/modal/schedule-modal.html" %}
+  {% include "dashboard/modal/register-modal.html" %}
+  {% include "dashboard/modal/epk-modal.html" %}
+  {% include "dashboard/modal/test-info-modal.html" %}content
+  {% include "dashboard/modal/log-modal.html" %}
+  {% include "dashboard/modal/remove-modal.html" %}
+  {% include "dashboard/modal/start-modal.html" %}
+  {% include "dashboard/modal/remove-modal.html" %}
+  {% include "dashboard/modal/done-modal.html" %}
+  {% include "dashboard/modal/commit-modal.html" %}
+  {% include "dashboard/modal/notice-modal.html" %}
 {% endblock %}
 
 {% block footer %}

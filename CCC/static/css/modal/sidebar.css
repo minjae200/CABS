@@ -1,3 +1,9 @@
+.modal-sidebar {
+    float: left;
+    width: 160px;
+    height: 100%;
+}
+
 .modal-sidebar-menu {
     width: 100%;
     min-height: 100%;

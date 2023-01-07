@@ -30,28 +30,67 @@
   padding: 8px 16px;
   color: var(--app-content-main-color);
   font-size: 14px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
-.table-view .table-cell img {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  margin-right: 6px;
+
+.table-view .table-cell.no-flex {
+  flex: none;
 }
+
+.table-view .table-cell.module {
+  width: 25%;
+}
+
+.table-view .table-cell.tag {
+  width: 35%;
+}
+
+.table-view .table-cell.unittest {
+  width: 13%;
+}
+.table-view .table-cell.lld
+{
+  width: 7%;
+}
+.table-view .table-cell.register
+{
+  width: 10%;
+}
+.table-view .table-cell.options 
+{
+  width: 10%;
+}
+
+.table-view .table-cell.url 
+{
+  width: 80%;
+}
+
+.tbale-cell.text-center {
+  text-align: center;
+}
+
+.table-sub-text {
+  font-size: 6px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width: 780px) {
   .table-view .table-cell {
     font-size: 12px;
   }
-  .table-view .table-cell.chip span {
+  .table-view .table-cell.chip, .table-view .table-cell.module span {
     display: none;
   }
-  .table-view .table-cell.chip {
+  .table-view .table-cell.chip, .table-view .table-cell.module {
     flex: 0.2;
   }
 }
 @media screen and (max-width: 520px) {
-  .table-view .table-cell.region, .table-view .table-cell.type {
+  .table-view .table-cell.region,
+  .table-view .table-cell.tag,
+  .table-view .table-cell.type {
     display: none;
   }
   .table-view .table-cell.status-cell {
@@ -133,4 +172,16 @@
 }
 .status.disabled:before {
   background-color: #59719d;
+}
+
+.table-no-scrollbar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.table-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.table-small-view {
+  max-height: 50vh;
 }
