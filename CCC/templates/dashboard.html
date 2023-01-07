@@ -6,13 +6,18 @@
   <link rel="stylesheet" href="{% static 'css/header-layout.css' %}">
   <link rel="stylesheet" href="{% static 'css/content-layout.css' %}">
   <link rel="stylesheet" href="{% static 'css/card.css' %}">
-  <link rel="stylesheet" href="{% static 'css/modal.css' %}">
   <link rel="stylesheet" href="{% static 'css/button.css' %}">
   <link rel="stylesheet" href="{% static 'css/ticket.css' %}">
   <link rel="stylesheet" href="{% static 'css/badge.css' %}">
   <link rel="stylesheet" href="{% static 'css/search.css' %}">
   <link rel="stylesheet" href="{% static 'css/score-board.css' %}">
-  <link rel="stylesheet" href="{% static 'css//user-button.css' %}">
+  <link rel="stylesheet" href="{% static 'css/user-button.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/modal/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'css/modal/form.css' %}">
+  <link rel="stylesheet" href="{% static 'css/modal/sidebar.css' %}">
+
+  
 {% endblock %}
 
 {% block header %}
@@ -21,7 +26,8 @@
   
 {% block content %}
   {% include "dashboard/content.html" %}
-  {% include "dashboard/modal/modify_date.html" %}
+  {% include "dashboard/modal/schedule.html" %}
+  {% include "dashboard/modal/register.html" %}
 {% endblock %}
 
 {% block footer %}
