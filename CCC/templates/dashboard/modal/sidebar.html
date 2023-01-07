@@ -1,0 +1,40 @@
+{% load static %}
+  <div class="modal-sidebar-menu">
+    <div class="modal-sidebar-header">
+      <div class="project-name"> Category </div>
+    </div>
+    <ul class="modal-sidebar-body" id="modal-sidebar">
+      <script>
+        const moduleHTML = `{% include 'dashboard/modal/register-module.html' %}`
+        const urlHTML = `{% include 'dashboard/modal/register-url.html' %}`;
+        const patchHTML = `{% include 'dashboard/modal/register-patch.html' %}`;
+        const binaryHTML = `{% include 'dashboard/modal/register-binary.html' %}`;
+        const manualHTML = `{% include 'dashboard/modal/register-manual.html' %}`;
+        const tvpmHTML = `{% include 'dashboard/modal/register-tvpm.html' %}`;
+      </script>
+      <li class="active" id="module-side" onclick="OnLoad(this, moduleHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> Module </span>
+      </li>
+      <li id="module-url" onclick="OnLoad(this, urlHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> Depend on URL</span>
+      </li>
+      <li id="module-patch" onclick="OnLoad(this, patchHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> Patch File </span>
+      </li>
+      <li id="module-binary" onclick="OnLoad(this, binaryHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> Binary </span>
+      </li>
+      <li id="module-manual" onclick="OnLoad(this, manualHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> Manual Edit </span>
+      </li>
+      <li id="module-tvpm" onclick="OnLoad(this, tvpmHTML)">
+        <i class="fa-solid fa-circle"></i>
+        <span> TVPM </span>
+      </li>
+    </ul>
+  </div>

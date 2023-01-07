@@ -1,32 +1,32 @@
-.chip{
-	padding: 6px 10px;
+.badge{
+	padding: 9px 10px;
 	border-radius: 10px;
 	font-weight: 500;
 	font-size: 12px;
 	box-shadow: 0 2px 5px rgba(0,0,0,.25);
 }
 
-.chip.primary{
+.badge.primary{
 	background: #2F4058;
 	color: whitesmoke;
 }
 
-.chip.secondary{
+.badge.secondary{
 	background: #242933;
 	color: #777;
 }
 
-.chip.warning{
+.badge.warning{
 	background:#FEB904;
 	color: whitesmoke;
 }
-.chip.danger{
+.badge.danger{
 	background: #DA605B;
 	/* background: #CD201F; */
 	color: whitesmoke;
 }
 
-.chip.info{
+.badge.info{
 	background: #5FD6D4;
 	color: whitesmoke;
 }

@@ -11,18 +11,6 @@
     margin-top: 20px;
 }
 
-/* .card-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 90vh;
-    flex-wrap: wrap;
-    min-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-} */
-
 .card-container::-webkit-scrollbar {
     display: none;
 }

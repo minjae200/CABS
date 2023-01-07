@@ -1,0 +1,69 @@
+.modal-sidebar-menu {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--sidebar);
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.modal-sidebar-header {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.modal-sidebar-body {
+    width: 100%;
+    height: calc(80vh - 80px);
+    margin: 0 auto;
+}
+
+.modal-sidebar-footer {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.modal-3);
+}
+
+.modal-sidebar-body li{
+    font-size: 13px;
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.modal-sidebar-body .active {
+    background-color: var(--sidebar-active-link);
+}
+
+.modal-sidebar-body li:hover{
+    border-right: 3px solid rgb(195, 52, 52);
+    background-color: var(--sidebar-hover-link);
+}
+
+.modal-sidebar-body li span{
+    margin-left: 10px;
+}
+.modal-sidebar-body li a{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type="checkbox"]:checked ~ .modal-sidebar-menu {
+    transform: translateX(0);
+}
+
+.modal-sidebar-body i {
+    font-size: 10px;
+}

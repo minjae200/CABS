@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="{% static 'css/search.css' %}">
   <link rel="stylesheet" href="{% static 'css/score-board.css' %}">
   <link rel="stylesheet" href="{% static 'css/user-button.css' %}">
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
 
   <link rel="stylesheet" href="{% static 'css/modal/custom.css' %}">
   <link rel="stylesheet" href="{% static 'css/modal/form.css' %}">
   <link rel="stylesheet" href="{% static 'css/modal/sidebar.css' %}">
-
-  
+  <link rel="stylesheet" href="{% static 'css/modal/upload-button.css' %}">
 {% endblock %}
 
 {% block header %}
@@ -25,9 +25,13 @@
 {% endblock %}
   
 {% block content %}
+  <script src="{% static 'js/modal-control.js' %}"></script>
   {% include "dashboard/content.html" %}
   {% include "dashboard/modal/schedule.html" %}
   {% include "dashboard/modal/register.html" %}
+  {% include "dashboard/modal/epk.html" %}
+  {% include "dashboard/modal/test-info.html" %}
+  {% include "dashboard/modal/log.html" %}
 {% endblock %}
 
 {% block footer %}

@@ -1,3 +1,31 @@
+.modal-large-text {
+    font-size: 3.6em;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+}
+
+.modal-empty:before {
+    content: "";
+    background-image: url("../../../static/image/sleep_binbird.png");
+    background-size:cover;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: calc(50% - 250px);
+    bottom: 49.5%;
+    transform: rotate(10deg);
+}
+
+.modal-no-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
 .modal-left {
     min-width: 50%;
@@ -12,20 +40,18 @@
 
 .modal-sidebar {
     float: left;
-    width: 30%;
+    width: 200px;
     height: 100%;
 }
 
 .modal-main {
     float: right;
-    width: 70%;
-    height: 100%;
+    width: calc(100% - 200px);
+    height: 80vh;
 }
 
 .modal-main.no-sidebar {
     width: 100% !important;
-    min-height: 500px;
-    max-height: 100%;
 }
 
 .title-container {
@@ -37,11 +63,38 @@
     border-radius: 15px;
 }
 
+.fix-content-height {
+    min-height: 80vh !important;
+    max-height: 80vh !important;
+}
+
 .modal-header-custom {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    height: 150px !important;
+}
+
+.modal-small-body {
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-small-body::-webkit-scrollbar {
+    display: none;
+}
+
+.fix-body-height {
+    height: calc(80vh - 210px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.fix-body-height::-webkit-scrollbar {
+    display: none;
 }
 
 .modal-footer-custom {
+    height: 60px !important;
     border-top: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 

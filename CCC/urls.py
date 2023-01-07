@@ -3,5 +3,6 @@ from . import views
 
 app_name = 'CCC'
 urlpatterns = [
-    path('', views.MainView.as_view(), name='main'),
+    path('', views.DashboardView.as_view(), name='dashboard'),
+    path('/register', views.RegisterModuleView.as_view(), name='register'),
 ]
