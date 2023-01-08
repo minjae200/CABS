@@ -69,7 +69,8 @@
   top: -20px;
   transform: translateY(0);
   transition: transform 200ms;
-  width: 76px;
+  width: 75px;
+  visibility: hidden;
 }
 
 .cut-short {
@@ -79,6 +80,7 @@
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
+  visibility: visible;
 }
 
 .placeholder {
@@ -122,4 +124,46 @@
 
 .submit:active {
   background-color: #06b;
+}
+textarea {
+  resize: none;
+  padding: 15px !important;
+}
+
+@media (min-height: 800px)
+{
+    .textarea-container-sm {
+        height: 120px;
+        position: relative;
+        width: 100%;
+    }
+    .textarea-container-m {
+        height: 200px;
+        position: relative;
+        width: 100%;
+    }
+    .textarea-container-lg {
+        height: 780px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (min-height: 1500px)
+{
+    .textarea-container-sm {
+        height: 150px;
+        position: relative;
+        width: 100%;
+    }
+    .textarea-container-m {
+        height: 300px;
+        position: relative;
+        width: 100%;
+    }
+    .textarea-container-lg {
+        height: 1400px;
+        position: relative;
+        width: 100%;
+    }
 }
