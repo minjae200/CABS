@@ -19,7 +19,7 @@
   bottom: 20px;
   background: #3B4354;
   border-radius: 15px;
-  transition: ease all 1s;
+  transition: ease all 0.5s;
   backface-visibility: hidden;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
