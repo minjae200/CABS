@@ -7,9 +7,11 @@
       <script>
         const moduleHTML = `{% include 'dashboard/modal/register-module.html' %}`
         const urlHTML = `{% include 'dashboard/modal/register-url.html' %}`;
-        const patchHTML = `{% include 'dashboard/modal/register-patch.html' %}`;
         const binaryHTML = `{% include 'dashboard/modal/register-binary.html' %}`;
-        const manualHTML = `{% include 'dashboard/modal/register-manual.html' %}`;
+        const newManualHTML = `{% include 'dashboard/modal/register-new-manual.html' %}`;
+        const deleteManualHTML = `{% include 'dashboard/modal/register-delete-manual.html' %}`;
+        const newPatchHTML = `{% include 'dashboard/modal/register-new-patch.html' %}`;
+        const deletePatchHTML = `{% include 'dashboard/modal/register-delete-patch.html' %}`;
         const tvpmHTML = `{% include 'dashboard/modal/register-tvpm.html' %}`;
       </script>
       <li class="active" id="module-side" onclick="OnLoad(this, moduleHTML)">
@@ -24,13 +26,25 @@
         <i class="fa-solid fa-circle"></i>
         <span> Depend on URL</span>
       </li>
-      <li id="module-manual" onclick="OnLoad(this, manualHTML)">
-        <i class="fa-solid fa-circle"></i>
-        <span> Manual Edit </span>
+      <li class="no-hover">
+        <div class="dropdown-sidebar">
+          <i class="fa-solid fa-circle"></i>
+          <span> Manual Edit </span> <i class="fa fa-caret-down" style="float: right; margin-top: 5px;"></i>
+        </div>
+        <ul class="sub-sidebar">
+          <li id="new-manual" onclick="OnLoad(this, newManualHTML)"><span> New & Edit </span></li>
+          <li id="delete-manual" onclick="OnLoad(this, deleteManualHTML)"><span> Delete </span></li>
+        </ul>
       </li>
-      <li id="module-patch" onclick="OnLoad(this, patchHTML)">
-        <i class="fa-solid fa-circle"></i>
-        <span> Patch File </span>
+      <li class="no-hover">
+        <div class="dropdown-sidebar">
+          <i class="fa-solid fa-circle"></i>
+          <span> Patch File </span><i class="fa fa-caret-down" style="float: right; margin-top: 5px;"></i>
+        </div>
+        <ul class="sub-sidebar">
+          <li id="new-patch" onclick="OnLoad(this, newPatchHTML)"><span> New </span></li>
+          <li id="delete-patch" onclick="OnLoad(this, deletePatchHTML)"><span> Delete </span></li>
+        </ul>
       </li>
       <li id="module-tvpm" onclick="OnLoad(this, tvpmHTML)">
         <i class="fa-solid fa-circle"></i>

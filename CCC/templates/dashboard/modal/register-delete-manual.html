@@ -1,0 +1,49 @@
+<div class="modal-header modal-header-custom">
+  <div class="title-container">
+    <div class="title">Manual Edit</div>
+    <div class="subtitle">New & Modify file for CCC</div>
+  </div>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span class="modal-text-color" aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body fix-body-height">
+  <div class="input-container ic1">
+    <select class="input" name="Repository">
+        <option value="meta-lg-webos"> meta-lg-webos</option>
+        <option value="meta-lg-webos-tv"> meta-lg-webos-tv </option>
+    </select>
+    <div class="cut"></div>
+    <label for="module" class="placeholder">Repository</label>
+  </div>
+  <div class="input-container ic2">
+    <input id="delete-manual-path" class="input" type="text" placeholder=" "
+      onfocus="this.placeholder='./meta-starfish/recipes-starfish/legacy-broadcast/legacy-broadcast.bb'"
+      onblur="this.placeholder=' '" autocomplete="off" />
+    <div class="cut"></div>
+    <label for="delete-manual-path" class="placeholder">Path</label>
+  </div>
+  <div class="input-container ic2">
+    <input id="delete-manual-title" class="input" type="text" placeholder=" "
+      onfocus="this.placeholder='This is Title'"
+      onblur="this.placeholder=' '" autocomplete="off" />
+    <div class="cut"></div>
+    <label for="delete-manual-title" class="placeholder">Title</label>
+  </div>
+  <div class="textarea-container-sm ic2">
+    <textarea id="delete-manual-release-notes" class="input" type="text" placeholder=" "
+      onfocus="this.placeholder='This is Release Notes'" onblur="this.placeholder=' '" autocomplete="off"></textarea>
+    <div class="cut" style="width: 93px;"></div>
+    <label for="delete-manual-release-notes" class="placeholder">Release Notes</label>
+  </div>
+  <div class="textarea-container-m ic2">
+    <textarea id="delete-manual-detailed-notes" class="input" type="text" placeholder=" "
+      onfocus="this.placeholder='This is Detailed Notes'" onblur="this.placeholder=' '" autocomplete="off"></textarea>
+    <div class="cut" style="width: 96px;"></div>
+    <label for="delete-manual-detailed-notes" class="placeholder">Detailed Notes</label>
+  </div>
+</div>
+<div class="modal-footer modal-footer-custom">
+  <button type="button" class="btn btn-secondary modal-text-color" data-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary modal-text-color">Add</button>
+</div>

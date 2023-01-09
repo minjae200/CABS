@@ -37,14 +37,19 @@
   height: 50px;
   position: relative;
   width: 100%;
+  display: inline-block;
 }
 
 .ic1 {
-  margin: 30px 0px;
+  margin: 12px 0px;
 }
 
 .ic2 {
-  margin: 30px 0px;
+  margin: 12px 0px;
+}
+
+.end-input {
+  margin: 12px 0px 0px 0px;
 }
 
 .input {
@@ -125,6 +130,7 @@
 .submit:active {
   background-color: #06b;
 }
+
 textarea {
   resize: none;
   padding: 15px !important;
@@ -133,12 +139,12 @@ textarea {
 @media (min-height: 800px)
 {
     .textarea-container-sm {
-        height: 120px;
+        height: 90px;
         position: relative;
         width: 100%;
     }
     .textarea-container-m {
-        height: 200px;
+        height: 120px;
         position: relative;
         width: 100%;
     }
@@ -152,12 +158,12 @@ textarea {
 @media (min-height: 1500px)
 {
     .textarea-container-sm {
-        height: 150px;
+        height: 120px;
         position: relative;
         width: 100%;
     }
     .textarea-container-m {
-        height: 300px;
+        height: 200px;
         position: relative;
         width: 100%;
     }

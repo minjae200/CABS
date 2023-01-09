@@ -26,7 +26,6 @@
 {% endblock %}
   
 {% block content %}
-  <script src="{% static 'js/modal-control.js' %}"></script>
   {% include "dashboard/content.html" %}
   {% include "dashboard/modal/schedule-modal.html" %}
   {% include "dashboard/modal/register-modal.html" %}
@@ -39,6 +38,7 @@
   {% include "dashboard/modal/done-modal.html" %}
   {% include "dashboard/modal/commit-modal.html" %}
   {% include "dashboard/modal/notice-modal.html" %}
+  <script src="{% static 'js/modal-control.js' %}"></script>
 {% endblock %}
 
 {% block footer %}

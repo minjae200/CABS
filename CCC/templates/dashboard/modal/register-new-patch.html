@@ -1,0 +1,28 @@
+<div class="modal-header modal-header-custom">
+  <div class="title-container">
+    <div class="title">Patch File</div>
+    <div class="subtitle">Add new patch file for CCC</div>
+  </div>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span class="modal-text-color" aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body fix-body-height">
+  <div class="input-container ic1">
+    <input id="patch-module" class="input" type="text" placeholder=" " onfocus="this.placeholder='legacy-broadcast'"
+      onblur="this.placeholder=' '" autocomplete="off" />
+    <div class="cut"></div>
+    <label for="patch-module" class="placeholder">Module</label>
+  </div>
+  <div class="input-container ic2">
+    <input type="text" class="upload_text" readonly="readonly" id="upload_text" value="Patch File"/>
+    <div class="upload-btn_wrap">
+      <button type="button" title="Upload"> <i class="fa-solid fa-cloud-arrow-up"></i> </button>
+      <input id="patch_input" type="file" class="input_file" title="Upload" onchange="ChangeValue()"/>
+    </div>
+  </div>
+</div>
+<div class="modal-footer modal-footer-custom">
+  <button type="button" class="btn btn-secondary modal-text-color" data-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary modal-text-color">Add</button>
+</div>
