@@ -18,6 +18,11 @@
   align-items: center;
   border-radius: 4px;
 }
+
+.table-view .table-row.pointer {
+  cursor: pointer;
+}
+
 .table-view .table-row:hover {
   box-shadow: var(--filter-shadow);
   background-color: var(--app-content-secondary-color);
@@ -46,6 +51,14 @@
 .table-view .table-cell.patch-cell
 {
   width: 35%;
+}
+
+.table-view .table-cell.branch-platform-cell,
+.table-view .table-cell.branch-name-cell {
+  width: 25%;
+}
+.table-view .table-cell.branch-info-cell {
+  width: 50%;
 }
 
 .table-view .table-cell.unittest-cell,

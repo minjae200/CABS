@@ -6,8 +6,8 @@
     <ul class="modal-sidebar-body" id="modal-sidebar">
       <script>
         const moduleHTML = `{% include 'dashboard/modal/register-module.html' %}`
-        const urlHTML = `{% include 'dashboard/modal/register-url.html' %}`;
         const binaryHTML = `{% include 'dashboard/modal/register-binary.html' %}`;
+        const urlHTML = `{% include 'dashboard/modal/register-url.html' %}`;
         const newManualHTML = `{% include 'dashboard/modal/register-new-manual.html' %}`;
         const deleteManualHTML = `{% include 'dashboard/modal/register-delete-manual.html' %}`;
         const newPatchHTML = `{% include 'dashboard/modal/register-new-patch.html' %}`;
@@ -18,11 +18,11 @@
         <i class="fa-solid fa-circle"></i>
         <span> Module </span>
       </li>
-      <li id="module-binary" onclick="OnLoad(this, binaryHTML)">
+      <li id="binary-side" onclick="OnLoad(this, binaryHTML)">
         <i class="fa-solid fa-circle"></i>
         <span> Binary </span>
       </li>
-      <li id="module-url" onclick="OnLoad(this, urlHTML)">
+      <li id="url-side" onclick="OnLoad(this, urlHTML)">
         <i class="fa-solid fa-circle"></i>
         <span> Depend on URL</span>
       </li>
@@ -46,7 +46,7 @@
           <li id="delete-patch" onclick="OnLoad(this, deletePatchHTML)"><span> Delete </span></li>
         </ul>
       </li>
-      <li id="module-tvpm" onclick="OnLoad(this, tvpmHTML)">
+      <li id="tvpm-side" onclick="OnLoad(this, tvpmHTML)">
         <i class="fa-solid fa-circle"></i>
         <span> TVPM </span>
       </li>

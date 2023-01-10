@@ -1,0 +1,20 @@
+{% load static %}
+<div class="modal-sidebar-menu">
+  <div class="modal-sidebar-header">
+    <div class="project-name">Category</div>
+  </div>
+  <ul class="modal-sidebar-body" id="create-modal-sidebar">
+    <script>
+      const autoCreateHTML = `{% include 'dashboard/modal/auto-create.html' %}`;
+      const manualCreateHTML = `{% include 'dashboard/modal/manual-create.html' %}`;
+    </script>
+    <li class="active" id="auto-create-side" onclick="OnCreateLoad(this, autoCreateHTML)">
+      <i class="fa-solid fa-circle"></i>
+      <span> Auto Progress </span>
+    </li>
+    <li id="manual-create-side" onclick="OnCreateLoad(this, manualCreateHTML)">
+      <i class="fa-solid fa-circle"></i>
+      <span> Manual Progress</span>
+    </li>
+  </ul>
+</div>

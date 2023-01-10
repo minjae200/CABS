@@ -1,42 +1,11 @@
 <div class="modal fade" id="create-modal" tabindex="-1" role="dialog" aria-labelledby="create-modal" aria-hidden="true">
-    <div class="modal-dialog modal modal-dialog-centered" role="document">
-        <div class="modal-content modal-content-custom">
-            <div class="modal-header modal-header-custom">
-                <div class="title-container">
-                    <div class="title">Create</div>
-                    <div class="subtitle">Let's create CCC</div>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="modal-text-color" aria-hidden="true">&times;</span>
-                </button>
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-custom" style="flex-direction: row;">
+            <div class="modal-sidebar" style="width: 180px;">
+                {% include "dashboard/modal/create-sidebar.html" %}
             </div>
-            <div class="modal-body">
-                <div class="input-container ic1">
-                    <input id="branch" class="input" type="text" placeholder=" " onfocus="this.placeholder='@webos4tv'"
-                        onblur="this.placeholder=' '" autocomplete="off"/>
-                    <div class="cut"></div>
-                    <label for="branch" class="placeholder">Branch</label>
-                </div>
-                <div class="input-container ic2">
-                    <input id="date" class="input" type="date" placeholder=" " value="" />
-                    <div class="cut"></div>
-                    <label for="date" class="placeholder">Date</label>
-                    <script>
-                        let today = new Date();
-                        let tomorrow = new Date(today);
-                        tomorrow.setDate(tomorrow.getDate() + 1)
-                        document.getElementById('date').value = tomorrow.toISOString().substring(0, 10);
-                    </script>
-                </div>
-                <div class="input-container ic2">
-                    <input id="time" class="input" type="time" placeholder=" " value="10:00" />
-                    <div class="cut"></div>
-                    <label for="time" class="placeholder">Time</label>
-                </div>
-            </div>
-            <div class="modal-footer modal-footer-custom">
-                <button type="button" class="btn btn-secondary modal-text-color" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary modal-text-color">Create</button>
+            <div class="modal-main" id="create-modal-main">
+                {% include "dashboard/modal/auto-create.html" %}
             </div>
         </div>
     </div>
