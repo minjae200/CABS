@@ -17,6 +17,7 @@ $('.modal').on('hidden.bs.modal', function(event) {
   for (var i = 0; i < sidebar.length; i++) {
     sidebar[i].style.display = "none";
   };
+  ResetFilter();
 });
 
 function OnCreateLoad(obj, html) {
@@ -57,11 +58,20 @@ function ChangeValue() {
   document.getElementById("upload_text").value = value;
 }
 
+function ResetFilter() {
+  var branchList = document.getElementById("branch-list");
+  if (branchList === undefined)
+    return;
+  var tableRows = branchList.getElementsByClassName("table-row");
+  for (var i = 0; i < tableRows.length; i++) {
+    tableRows[i].style.display = "";
+  }
+}
+
 function FilterBranch() {
   var input = document.getElementById("create-branch");
   var filter = input.value.toUpperCase();
   var branchList = document.getElementById("branch-list");
-
   var tableRows = branchList.getElementsByClassName("table-row");
 
   for (var i = 0; i < tableRows.length; i++) {
