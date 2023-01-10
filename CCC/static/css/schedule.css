@@ -1,0 +1,24 @@
+.timeline-container {
+  height: 95vh;
+  max-height: 95vh;
+  width: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: left;
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none;
+}
+
+.member-container {
+  height: 95vh;
+  max-height: 95vh;
+  width: calc(100% - 500px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: left;
+}
+.member-container::-webkit-scrollbar {
+  display: none;
+}

@@ -3,16 +3,16 @@
   <div class="modal-sidebar-header">
     <div class="project-name">Category</div>
   </div>
-  <ul class="modal-sidebar-body" id="create-modal-sidebar">
+  <ul class="modal-sidebar-body small-sidebar-body" id="create-modal-sidebar">
     <script>
       const autoCreateHTML = `{% include 'dashboard/modal/auto-create.html' %}`;
       const manualCreateHTML = `{% include 'dashboard/modal/manual-create.html' %}`;
     </script>
-    <li class="active" id="auto-create-side" onclick="OnCreateLoad(this, autoCreateHTML)">
+    <li class="active" id="auto-create-side" onclick="OnCreateLoad(this, autoCreateHTML, TomorrowDate)">
       <i class="fa-solid fa-circle"></i>
       <span> Auto Progress </span>
     </li>
-    <li id="manual-create-side" onclick="OnCreateLoad(this, manualCreateHTML)">
+    <li id="manual-create-side" onclick="OnCreateLoad(this, manualCreateHTML, TodayDate)">
       <i class="fa-solid fa-circle"></i>
       <span> Manual Progress</span>
     </li>

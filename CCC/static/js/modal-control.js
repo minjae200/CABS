@@ -10,17 +10,38 @@ for (var i = 0; i < dropdown.length; i++) {
   });
 }
 
-$('.modal').on('hidden.bs.modal', function(event) {
-  $(this).find('form')[0].reset()
+$('.modal').on('show.bs.modal', function(event) {
+  TomorrowDate('create-date');
+  TodayDate('manual-create-date');
+});
 
+$('.modal').on('hidden.bs.modal', function(event) {
+  try {
+    $(this).find('form')[0].reset()
+  } catch {
+
+  }
   var sidebar = document.getElementsByClassName("sub-sidebar");
   for (var i = 0; i < sidebar.length; i++) {
     sidebar[i].style.display = "none";
   };
   ResetFilter();
+  OnLodaingDefaultHTML();
 });
 
-function OnCreateLoad(obj, html) {
+function OnLodaingDefaultHTML() {
+  const createSidebar = document.getElementById('auto-create-side');
+  if (createSidebar !== undefined && createSidebar !== null) {
+    createSidebar.click();
+  }
+
+  const registerSidebar = document.getElementById('module-side');
+  if (registerSidebar !== undefined && registerSidebar !== null) {
+    registerSidebar.click();
+  }
+}
+
+function OnCreateLoad(obj, html, callback) {
   const sidebarBody = document.getElementById("create-modal-sidebar");
 
   var elements = sidebarBody.querySelectorAll("li");
@@ -34,6 +55,10 @@ function OnCreateLoad(obj, html) {
     }
   }
   document.getElementById("create-modal-main").innerHTML = html;
+
+  if (callback === null || callback === undefined)
+    return;
+  callback();
 }
 
 function OnLoad(obj, html) {
@@ -60,7 +85,7 @@ function ChangeValue() {
 
 function ResetFilter() {
   var branchList = document.getElementById("branch-list");
-  if (branchList === undefined)
+  if (branchList === undefined || branchList === null)
     return;
   var tableRows = branchList.getElementsByClassName("table-row");
   for (var i = 0; i < tableRows.length; i++) {
@@ -91,4 +116,24 @@ function UpdateBranch(obj) {
     return;
   }
   document.getElementById("create-branch").value = branch;
+}
+
+function TomorrowDate() {
+  var element = document.getElementById('create-date');
+  if (element === undefined || element === null) {
+    return;
+  }
+  let today = new Date();
+  let tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1)
+  element.value = tomorrow.toISOString().substring(0, 10);
+}
+
+function TodayDate() {
+  var element = document.getElementById('manual-create-date');
+  if (element === undefined || element === null) {
+    return;
+  }
+  let today = new Date();
+  element.value = today.toISOString().substring(0, 10);
 }

@@ -2,53 +2,54 @@
   <div class="sidebar-menu">
     <div class="sidebar-header">
       <i class="fa-solid fa-bus" style="color: white; font-size: 1.3em"></i>
-      <div class="project-name"> CABS
-        <div class="project-version"> v2.0.0 </div>
+      <div class="project-name">
+        CABS
+        <div class="project-version">v2.0.0</div>
       </div>
     </div>
     <ul class="sidebar-body">
-      <li class="active">
-        <a href="{% url 'CCC:dashboard' %}">
+      <a href="{% url 'CCC:dashboard' %}">
+        <li class="active">
           <i class="fa fa-laptop fa"></i>
           <span>Dashboard</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="{% url 'CCC:history' %}">
+        <li>
           <i class="fa-solid fa-book-open"></i>
           <span>History</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="{% url 'CCC:schedule' %}">
+        <li>
           <i class="fa-solid fa-users"></i>
           <span>Member Schedule</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li>
           <i class="fa-solid fa-calendar-days"></i>
           <span>OE-Build Schedule</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li>
           <i class="fa-regular fa-clipboard"></i>
           <span>Develop Notes</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li>
           <i class="fa fa-font fa"></i>
           <span>QnA</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li>
           <i class="fa fa-info fa"></i>
           <span>User Guide</span>
-        </a>
-      </li>
+        </li>
+      </a>
     </ul>
     <div class="sidebar-footer">
       <div class="develop-team">&copy; TV Broadcast Solution</div>

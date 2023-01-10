@@ -9,7 +9,7 @@
 </div>
 
 <form action="#" method="POST">
-    <div class="modal-body fix-body-height">
+    <div class="modal-body fix-body-small-height">
         <div class="input-container ic1">
             <select class="input" name="result">
                 <option value="complete"> Complete</option>
@@ -19,15 +19,15 @@
             <label for="module" class="placeholder">Result</label>
         </div>
         <div class="input-container ic2">
+            <input id="manual-create-date" class="input" type="date" placeholder=" " value="" />
+            <div class="cut"></div>
+            <label for="manual-create-date" class="placeholder">Date</label>
+        </div>
+        <div class="input-container ic2">
             <input id="manual-create-branch" class="input" type="text" placeholder=" "
             onfocus="this.placeholder='@webos4tv'" onblur="this.placeholder=' '" autocomplete="off"/>
             <div class="cut"></div>
             <label for="manual-create-branch" class="placeholder">Branch</label>
-        </div>
-        <div class="input-container ic2">
-            <input id="manual-create-date" class="input" type="date" placeholder=" " value="" />
-            <div class="cut"></div>
-            <label for="manual-create-date" class="placeholder">Date</label>
         </div>
         <div class="input-container ic2">
             <input id="manual-create-gerrit" class="input" type="text" placeholder=" "
@@ -42,13 +42,6 @@
             onblur="this.placeholder=' '" autocomplete="off" />
             <div class="cut"></div>
             <label for="manual-create-jira" class="placeholder">Jira</label>
-        </div>
-        <div class="textarea-container-lg ic2">
-            <textarea id="binary-release-notes" class="input" type="text" placeholder=" "
-            onfocus="this.placeholder='https://cerberus.lge.com/jenkins/job/starfish-manas-verify-k8ap/95/ : SUCCESS'"
-            onblur="this.placeholder=' '" autocomplete="off"></textarea>
-            <div class="cut" style="width: 93px;"></div>
-            <label for="binary-release-notes" class="placeholder">Build Link</label>
         </div>
     </div>
     <div class="modal-footer modal-footer-custom">

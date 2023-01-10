@@ -1,0 +1,63 @@
+<div
+  class="modal fade"
+  id="delay-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="delay-modal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal modal-dialog-centered" role="document">
+    <div class="modal-content modal-content-custom">
+      <div class="modal-header modal-header-custom">
+        <div class="title-container">
+          <div class="title">Delay Schedule</div>
+          <div class="subtitle">Set user delay date & reason</div>
+        </div>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span class="modal-text-color" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-container ic1">
+          <input
+            id="delay-date"
+            class="input"
+            type="date"
+            placeholder=" "
+            value=""
+          />
+          <div class="cut"></div>
+          <label for="delay-date" class="placeholder">Date</label>
+        </div>
+        <div class="input-container ic2">
+          <input
+            id="delay-reason"
+            class="input"
+            type="text"
+            placeholder=" "
+            onfocus="this.placeholder='Some Reason..'"
+            onblur="this.placeholder=' '"
+            autocomplete="off"
+          />
+          <div class="cut"></div>
+          <label for="delay-reason" class="placeholder">Reason</label>
+        </div>
+      </div>
+      <div class="modal-footer modal-footer-custom">
+        <button
+          type="button"
+          class="btn btn-secondary modal-text-color"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="submit" class="btn btn-primary modal-text-color">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
