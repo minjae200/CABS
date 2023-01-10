@@ -268,5 +268,5 @@
 }
 
 .table-large-view {
-  max-height: 95vh;
+  max-height: calc(90vh - 72px);
 }
