@@ -5,18 +5,17 @@
 {% block stylesheet %}
     <link rel="stylesheet" href="{% static 'css/board.css' %}">
     <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <link rel="stylesheet" href="{% static 'css/button.css' %}">
     <link rel="stylesheet" href="{% static 'css/modal/custom.css' %}">
     <link rel="stylesheet" href="{% static 'css/modal/form.css' %}">
-    <link rel="stylesheet" href="{% static 'css/modal/sidebar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/history.css' %}">
 {% endblock %}
 
 {% block header %}
 {% endblock %}
-  
+
 {% block content %}
-    {% include "history/board.html" %}
-    {% include "history/modal/detail-modal.html" %}
+    {% include "userNote/board.html" %}
+    {% include "userNote/modal/write-modal.html" %}
 {% endblock %}
 
 {% block footer %}

@@ -54,6 +54,11 @@
 .table-view .table-cell.reason-cell {
   width: 28%;
 }
+
+.table-view .table-cell.small-tag-cell {
+  width: 24%;
+}
+
 .table-view .table-cell.tag-cell,
 .table-view .table-cell.patch-cell
 {
@@ -73,7 +78,10 @@
 .table-view .table-cell.delay-cell,
 .table-view .table-cell.unittest-cell,
 .table-view .table-cell.branch-cell,
-.table-view .table-cell.chip-cell
+.table-view .table-cell.chip-cell,
+.table-view .table-cell.small-status-cell,
+.table-view .table-cell.date-cell,
+.table-view .table-cell.category-cell
 {
   width: 13%;
 }
@@ -88,13 +96,14 @@
 {
   width: 7%;
 }
-
+.table-view .table-cell.views-cell,
 .table-view .table-cell.latest-cell,
 .table-view .table-cell.register-cell,
 .table-view .table-cell.options-cell,
 .table-view .table-cell.common-cell,
 .table-view .table-cell.action-cell,
-.table-view .table-cell.content-cell
+.table-view .table-cell.content-cell,
+.table-view .table-cell.page-link-cell
 {
   width: 10%;
 }
@@ -109,11 +118,18 @@
   width: 18%;
 }
 
-.table-view .table-cell.platform-cell {
+.table-view .table-cell.summary-cell {
+  width: 33%;
+}
+.table-view .table-cell.official-cell {
+  width: 25%;
+}
+
+.table-view .table-cell.platform-cell
+ {
   width: 20%;
 }
 
-.table-view .table-cell.date-cell,
 .table-view .table-cell.binary-cell,
 .table-view .table-cell.version-cell {
   width: 15%;
@@ -247,6 +263,21 @@
   overflow-x: hidden;
 }
 
+.table-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--sidebar);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.table-scrollbar::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
 .table-no-scrollbar {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -265,6 +296,10 @@
 
 .table-middle-view {
   max-height: 50vh;
+}
+
+.table-ml-view {
+  max-height: calc(75vh - 72px);
 }
 
 .table-large-view {

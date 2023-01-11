@@ -1,0 +1,61 @@
+<div
+  class="modal fade"
+  id="write-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="write-modal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content modal-content-custom">
+      <div class="modal-header modal-header-custom">
+        <div class="title-container">
+          <div class="title">Writing Note</div>
+          <div class="subtitle">Write development notes</div>
+        </div>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span class="modal-text-color" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-container ic1">
+            <select class="input" name="Category">
+              <option value="Notice"> Notice </option>
+              <option value="Patch Note"> Patch Note </option>
+              <option value="Bug Fix"> Bug Fix </option>
+              <option value="Hot Fix"> Hot Fix </option>
+            </select>
+            <div class="cut"></div>
+            <label for="module" class="placeholder">Category</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="develop-note-summary" class="input" type="text" placeholder=" "
+          onfocus="this.placeholder='This is summary'" onblur="this.placeholder=' '" autocomplete="off"/>
+          <div class="cut"></div>
+          <label for="develop-note-summary" class="placeholder">Summary</label>
+        </div>
+        <div class="textarea-container-lg ic2">
+          <textarea id="develop-note-content" class="input" type="text" placeholder=" "
+            onfocus="this.placeholder='This is content'" onblur="this.placeholder=' '" autocomplete="off"></textarea>
+          <div class="cut" style="width: 96px;"></div>
+          <label for="develop-note-content" class="placeholder">Content</label>
+        </div>
+      </div>
+      <div class="modal-footer modal-footer-custom">
+        <button
+          type="button"
+          class="btn btn-secondary modal-text-color"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="submit" class="btn btn-primary modal-text-color">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

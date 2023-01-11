@@ -1,0 +1,49 @@
+
+.history-chunk {
+    margin: 50px 0px;
+}
+
+.history-module-container {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.history-subtitle {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.history-module {
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0px 40px 30px 0px;
+}
+
+.history-module:hover {
+    border-right: 3px solid rgb(195, 52, 52);
+    background-color: var(--sidebar-hover-link);
+}
+
+.history-module .module {
+    color: whitesmoke;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.history-module .module .name{
+    align-items: center;
+    float: left;
+}
+
+.history-module .module .count{
+    align-items: center;
+    float: right;
+}

@@ -1,6 +1,6 @@
 .timeline {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -137,7 +137,7 @@
 
 .box-title {
   padding: 5px 15px;
-  border-bottom: 1px solid #17191b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
@@ -147,7 +147,7 @@
 
 .box-content {
   padding: 5px 15px;
-  background-color: #17191b;
+  /* background-color: #17191b; */
   color: #fff;
 }
 

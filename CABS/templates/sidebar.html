@@ -7,46 +7,46 @@
         <div class="project-version">v2.0.0</div>
       </div>
     </div>
-    <ul class="sidebar-body">
+    <ul class="sidebar-body" id="main-sidebar">
       <a href="{% url 'CCC:dashboard' %}">
-        <li class="active">
+        <li class="active" id="dashboard-side">
           <i class="fa fa-laptop fa"></i>
           <span>Dashboard</span>
         </li>
       </a>
       <a href="{% url 'CCC:history' %}">
-        <li>
+        <li id="history-side">
           <i class="fa-solid fa-book-open"></i>
           <span>History</span>
         </li>
       </a>
       <a href="{% url 'CCC:schedule' %}">
-        <li>
+        <li id="member-schedule-side">
           <i class="fa-solid fa-users"></i>
           <span>Member Schedule</span>
         </li>
       </a>
-      <a href="#" target="_blank">
-        <li>
+      <a href="http://baas.lge.com/scm" target="_blank">
+        <li id="oe-build-schedule">
           <i class="fa-solid fa-calendar-days"></i>
           <span>OE-Build Schedule</span>
         </li>
       </a>
-      <a href="#" target="_blank">
-        <li>
+      <a href="{% url 'CCC:develop' %}">
+        <li id="develop-notes-side">
           <i class="fa-regular fa-clipboard"></i>
           <span>Develop Notes</span>
         </li>
       </a>
-      <a href="#" target="_blank">
-        <li>
-          <i class="fa fa-font fa"></i>
-          <span>QnA</span>
+      <a href="{% url 'CCC:note' %}">
+        <li id="user-note-side">
+          <i class="fa-solid fa-user"></i>
+          <span>User Notes</span>
         </li>
       </a>
-      <a href="#" target="_blank">
-        <li>
-          <i class="fa fa-info fa"></i>
+      <a href="http://collab.lge.com/main/pages/viewpage.action?pageId=1373142441" target="_blank">
+        <li id="user-guide-side">
+          <i class="fa-solid fa-book"></i>
           <span>User Guide</span>
         </li>
       </a>

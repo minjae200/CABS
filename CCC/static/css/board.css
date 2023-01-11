@@ -1,0 +1,16 @@
+.board-container {
+  height: 95vh;
+  max-height: 95vh;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.board-container::-webkit-scrollbar {
+  display: none;
+}
+
+.board-head {
+  width: 95%;
+  margin: auto;
+}
